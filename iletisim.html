@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | İvedik Restoran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="/img/logo.png" alt="Restaurant Logo" class="img-fluid me-4" style="max-width: 120px;">
+                <h1 class="h3 fw-bold mb-0 text-uppercase">İvedik Restoran</h1>
+            </div>
+            <nav>
+                <a href="/index.html" class="text-white text-decoration-none mx-3">Anasayfa</a>
+                <a href="/hakkimizda.html" class="text-white text-decoration-none mx-3">Hakkımızda</a>
+                <a href="/menü.html" class="text-white text-decoration-none mx-3">Menü</a>
+                <a href="#" class="text-white text-decoration-none mx-3">İletişim</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="contact" class="py-5">
+        <div class="container">
+            <h2 class="display-4 text-center mb-4">Bizimle İletişime Geçin</h2>
+            <p class="lead text-center mb-5">Herhangi bir sorunuz varsa, bize aşağıdaki form aracılığıyla ulaşabilirsiniz.</p>
+
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h4>İletişim Bilgilerimiz</h4>
+                    <ul class="list-unstyled">
+                        <li><strong>Adres:</strong> Konya / Karatay, Türkiye</li>
+                        <li><strong>Telefon:</strong> (0551) 676 8147 & (0539) 242 33 98 </li>
+                        <li><strong>Email:</strong> <a href="mailto:info@ivedikrestoran.com">info@ivedikrestoran.com</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:mehmetsekeroglu21@gamil.com">Mehmet Yüksel Şekeroğlu</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:esermustafa.4242m@gmail.com">Mustafa Eser</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Harita</h4>
+                    <!-- Google Maps iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.5734467363854!2d32.55205181540393!3d37.87046297974471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d085a5b6a32e59%3A0x991b91c121d688af!2sKaratay%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1691177527894!5m2!1str!2str" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- İletişim Formu -->
+            <div class="row">
+                <div class="col-12">
+                    <h4>Mesaj Gönderin</h4>
+                    <form action="/submit-form" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Adınız</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-posta</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mesajınız</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <img src="/img/logo.png" alt="Restaurant Logo" class="img-fluid" style="max-width: 100px;">
+            </div>
+            <p class="text-secondary">&copy; 2024 İvedik Restoran. Tüm Hakları Saklıdır.</p>
+            <div class="mt-3">
+                <a href="/hakkimizda.html" class="text-white text-decoration-none mx-2">Hakkımızda</a>
+                <a href="/menü.html" class="text-white text-decoration-none mx-2">Menü</a>
+                <a href="#" class="text-white text-decoration-none mx-2">İletişim</a>
+            </div>
+            <div class="mt-3">
+                <a href="https://facebook.com" target="_blank" class="text-white text-decoration-none mx-2">Facebook</a>
+                <a href="https://instagram.com" target="_blank" class="text-white text-decoration-none mx-2">Instagram</a>
+                <a href="https://twitter.com" target="_blank" class="text-white text-decoration-none mx-2">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
